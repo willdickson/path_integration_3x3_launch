@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="path_integration" name="path_integration" type="path_integration_node.py" >
+    </node>
+</launch>
