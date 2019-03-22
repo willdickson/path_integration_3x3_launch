@@ -1,12 +1,8 @@
 <launch>
-
 <rosparam command="load" file="region_params.yaml"/>
-<!-- <include file="./led_pwm.launch"/>  --> 
+<include file="$(find led_pwm_tlc5947_ros)/launch/led_pwm_tlc5947.launch"/>  
 <include file="./pgr_camera.launch"/>
 <include file="./tracking_launcher.launch"/>    
-<!-- <include file="$(find path_integration_3x3)/launch/region_visualizer.launch"/> -->
-
-<!-- <include file="./path_integration.launch"/>  -->
-<!-- <include file="./start_logging.launch" /> -->
-
+<include file="$(find path_integration_3x3)/launch/path_integration_3x3.launch"/> 
+<include file="./start_logging.launch" />
 </launch>

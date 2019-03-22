@@ -1,4 +1,9 @@
 <launch>
-    <node pkg="rosbag" name="experiment_logger" type="record" args="record -o /home/amir/devel/tracker/tracker_data/path_integration /path_integration_data /led_pwm_info /multi_tracker/1/tracked_objects" >
+    <node 
+        pkg="rosbag" 
+        name="experiment_logger" 
+        type="record" 
+        args="record -o /home/amir/devel/tracker/tracker_data/path_integration_3x3 /path_integration_3x3_data /led_pwm_info /multi_tracker/1/tracked_objects" 
+        >
     </node>
 </launch>
